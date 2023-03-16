@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-wjih
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:2926956167234da3a12ea0f3e8d4a22e
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:409fdf5825e5f1f7a7305f7cfc1e29433fdeac78ffa0a7452da4cef4e22f81f6
         name: my-python
         ports:
         - containerPort: 8081
