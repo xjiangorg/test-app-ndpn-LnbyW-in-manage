@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-wjih
+  namespace: build-e2e-odgc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:409fdf5825e5f1f7a7305f7cfc1e29433fdeac78ffa0a7452da4cef4e22f81f6
+        name: my-python
+        resources: {}
+status: {}
